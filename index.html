@@ -1,332 +1,70 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-      <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!-- CSS -->
-      <link rel="stylesheet" type="text/css" href="style.css">
-      <!-- Compiled and minified CSS -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </head>
-    <title>Ashwin</title>
-    <link rel="icon" href="images/logo.png" type="image/png">
-    <body>
-      
-      <!-- Navbar -->
-        <nav class="nav-wrapper #000000 black">
-          <div class="container">
-            <a href="#" class="brand-logo"><img src="images/logo.png" class="image-logo"></a>
-            <a href="#" class="sidenav-trigger" data-target="mobile-links">
-              <i class="material-icons">menu</i>
-            </a>
-            <ul class="right hide-on-med-and-down">
-              <li><a href="#index.html"><span>Home</span></a></li>
-              <li><a href="#about_me"><span>About Me</span></a></li>
-              <li><a href="#portfolio"><span>Portfolio</span></a></li>
-              <li><a href="#contact"><span>Contact</span></a></li>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/main.css">
+    <title>Ashwin Prasad</title>
+    <link rel="icon" href="img/logo.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="menu-btn">
+            <span class="menu-btn__burger"></span>
+        </div>
+
+        <nav class="nav">
+            <ul class="menu-nav">
+                <li class="menu-nav__item active">
+                    <a href="index.html" class="menu-nav__link">
+                        Home
+                    </a>
+                </li>
+                <li class="menu-nav__item">
+                    <a href="about.html" class="menu-nav__link">
+                        About Me
+                    </a>
+                </li>
+                <li class="menu-nav__item">
+                    <a href="projects.html" class="menu-nav__link">
+                        My Projects
+                    </a>
+                </li>
+                <li class="menu-nav__item">
+                    <a href="contact.html" class="menu-nav__link">
+                        Contact Me
+                    </a>
+                </li>
             </ul>
-          </div>
         </nav>
+    </header>
 
-        <ul class="sidenav" id="mobile-links">
-           <li><a href="index.html">Home</a></li>
-           <li><a href="#about_me">About Me</a></li>
-           <li><a href="#portfolio">Portfolio</a></li>
-           <li><a href="#contact">Contact</a></li>
-        </ul>
+    <main>
+        <section class="home">
+            <h2>Hi! My Name Is </h2>
+            <h1 class="home__name">
+                Ashwin <span class="home__name--last">Prasad</span>
+            </h1>
+            <h2>
+                Frontend Developer | Tester | Designer
+            </h2>
 
-
-        <div class="carousel carousel-slider center">
-		    <div class="carousel-fixed-item center">
-		      <a class="btn waves-effect white grey-text darken-text-2" >View More!</a>
-		    </div>
-		    <div class="carousel-item red white-text" href="#one!">
-		      <h1>Welcome!</h1>
-		      <p class="white-text">To My Portfolio</p>
-		    </div>
-		    <div class="carousel-item amber white-text" href="#two!">
-		      <h1>I'm a</h1>
-		      <p class="white-text">Front End Developer</p>
-		    </div>
-		    <div class="carousel-item green white-text" href="#three!">
-		      <h1>Ocassionally a</h1>
-		      <p class="white-text">Technical Recruiter</p>
-		    </div>
-		    <div class="carousel-item blue white-text" href="#four!">
-		      <h1>A retired</h1>
-		      <p class="white-text">Process Associate</p>
-		    </div>
-		  </div>
-
-		  <div id="about_me">
-		  	   <h3 class="headings" >About Me</h3>
-		  </div>
-
-		  <div class="row">
-		    <div class="col s12 m4"> <img src="images/profile_img.jpg" class="image-alignment-main" id="shadow-effects"> </div>
-		    <div class="col s12 m8"><p class="about-content">I am a technology enthusiast with keep interest to learn new things every day. I started my career as a <strong>Process Associate,</strong>  Then I worked as a <strong>Technical Recruiter</strong> before moving to development field. I work as a <strong>Front End Developer</strong> now, Pushing myself to new challenges and learning new things through experimenting. My hobbies include playing football, watching anime and reading manga.
-		    </p>
-
-		    
-				<div class="container-skillbar">
-				<div class="skillbar clearfix " data-percent="70%">
-				<div class="skillbar-title" style="background: #DD1E2F;"><span>Bootstrap</span></div>
-				<div class="skillbar-bar" style="background: #DD1E2F;"></div>
-				<div class="skill-bar-percent">70%</div>
-			</div> <!-- Ende Skill Bar -->
-
-			<div class="skillbar clearfix " data-percent="65%">
-				<div class="skillbar-title" style="background: #EBB035;"><span>JQuery</span></div>
-				<div class="skillbar-bar" style="background: #EBB035;"></div>
-				<div class="skill-bar-percent">65%</div>
-			</div> <!-- Ende Skill Bar -->
-
-			<div class="skillbar clearfix " data-percent="25%">
-				<div class="skillbar-title" style="background: #06A2CB;"><span>PHP</span></div>
-				<div class="skillbar-bar" style="background: #06A2CB;"></div>
-				<div class="skill-bar-percent">25%</div>
-			</div> <!-- Ende Skill Bar -->
-
-			<div class="skillbar clearfix " data-percent="80%">
-				<div class="skillbar-title" style="background: #218559;"><span>HTML5</span></div>
-				<div class="skillbar-bar" style="background: #218559;"></div>
-				<div class="skill-bar-percent">80%</div>
-			</div> <!-- Ende Skill Bar -->
-
-			<div class="skillbar clearfix " data-percent="85%">
-				<div class="skillbar-title" style="background: #D0C6B1;"><span>CSS3</span></div>
-				<div class="skillbar-bar" style="background: #D0C6B1;"></div>
-				<div class="skill-bar-percent">85%</div>
-			</div> <!-- Ende Skill Bar -->
-
-			<div class="skillbar clearfix " data-percent="75%">
-				<div class="skillbar-title" style="background: #192823;"><span>JavaScript</span></div>
-				<div class="skillbar-bar" style="background: #454545;"></div>
-				<div class="skill-bar-percent">75%</div>
-			</div> <!-- Ende Skill Bar -->
-			</div><!-- Ende container Skill Bar -->
-			</div>
-
-		  </div>
-
-		  <div id="portfolio">
-		  	   <h3 class="headings">Portfolio</h3>
-		  </div>
-
-		  <div class="row">
-		  	<div class="col s12 m6">
-		  		<div class="card">
-        			<div class="card-image">
-          			<img class="materialboxed" width="650" src="images/project_one.png">
-          			<a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-        			</div>
-        		<div class="card-content">
-          			<p>A static website for Coimbatore based startup. This website is built using HTML, CSS, JavaScript, JQuery, PHP, Bootstrap and SCSS.</p>
-          			<center><a class="waves-effect waves-light btn" href="http://fpsanimations.com" style="margin-top: 15px;">Visit Site</a></center> 
-        		</div>
-      			</div>
-		  	</div>
-		    <div class="col s12 m6">
-		    	<div class="card">
-        			<div class="card-image">
-          			<img class="materialboxed" width="650" src="images/project_two.png">
-          			<a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-        			</div>
-        		<div class="card-content">
-          			<p>A static website for a Furnishing firm in Coimbatore. This website is built using HTML, CSS, JavaScript, JQuery, PHP and Bootstrap.</p>
-          			<center><a class="waves-effect waves-light btn" href="http://furnishinggarden.com" style="margin-top: 15px;">Visit Site</a></center>
-        		</div>
-      			</div>
-		    </div>
-		  </div>
-
-		  <div class="row">
-		  	<div class="col s12 m6">
-		  		<div class="card">
-        			<div class="card-image">
-          			<img class="materialboxed" width="650" src="images/project_three.png">
-          			<a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-        			</div>
-        		<div class="card-content">
-          			<p>A static website for a Coimbatore based startup which focuses on Digital marketing. This website is built using the Edge theme of Wordpress.</p>
-          			<center><a class="waves-effect waves-light btn" href="https://twostones.co" style="margin-top: 15px;">Visit Site</a></center>
-        		</div>
-      			</div>
-		  	</div>
-		    <div class="col s12 m6">
-		    	<div class="card">
-        			<div class="card-image">
-          			<img class="materialboxed" width="650" src="images/project_four.png">
-          			<a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-        			</div>
-        		<div class="card-content">
-          			<p>A static website for a New Zeland based firm which specializes in environmental science. This website is built using HTML, CSS, JavaScript and PHP.</p>
-          			<center><a class="waves-effect waves-light btn" href="https://www.landwaterscience.co.nz" style="margin-top: 15px;">Visit Site</a></center>
-        		</div>
-      			</div>
-		    </div>
-		  </div>
-
-
-		  <div class="row">
-		  	<div class="col s12 m6">
-		  		<div class="card">
-        			<div class="card-image">
-          			<img class="materialboxed" width="650" src="images/project_five.png">
-          			<a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-        			</div>
-        		<div class="card-content">
-          			<p>A static website for a co-working space provider. This website is built using HTML, CSS, JavaScript, PHP and I worked on the responsiveness of the website.</p>
-          			<center><a class="waves-effect waves-light btn" href="http://playworkz.co" style="margin-top: 15px;">Visit Site</a></center>
-        		</div>
-      			</div>
-		  	</div>
-		    <div class="col s12 m6">
-		    	<div class="card">
-        			<div class="card-image">
-          			<img class="materialboxed" width="650" src="images/project_six.png">
-          			<a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-        			</div>
-        		<div class="card-content">
-          			<p>A static website for medical billing service provider based in US & Hyderabad. This website is built using HTML, CSS, JavaScript and PHP.</p>
-          			<center><a class="waves-effect waves-light btn" href="http://capstoneprocare.com" style="margin-top: 15px;">Visit Site</a></center>
-        		</div>
-      			</div>
-		    </div>
-		  </div>
-
-
-		  <div class="row">
-		  	<div class="col s12 m6">
-		  		<div class="card">
-        			<div class="card-image">
-          			<img class="materialboxed" width="650" src="images/project_seven.png">
-          			<a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-        			</div>
-        		<div class="card-content">
-          			<p>A website for Coimbatore based retail firm. This website is built using HTML, CSS, JavaScript, JQuery and Bootstrap.</p>
-          			<center><a class="waves-effect waves-light btn" href="http://kvpstores.com/" style="margin-top: 15px;">Visit Site</a></center>
-        		</div>
-      			</div>
-		  	</div>
-		    <div class="col s12 m6">
-		    	<div class="card">
-        			<div class="card-image">
-          			<img class="materialboxed" width="650" src="images/project_eight.png">
-          			<a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-        			</div>
-        		<div class="card-content">
-          			<p>A website for Coimbatore based education firm. This website is built using wordpress.</p>
-          			<center><a class="waves-effect waves-light btn" href="http://bsquareedu.com/" style="margin-top: 15px;">Visit Site</a></center>
-        		</div>
-      			</div>
-		    </div>
-		  </div>
-
-      <div class="row">
-        <div class="col s12 m6">
-          <div class="card">
-              <div class="card-image">
-                <img class="materialboxed" width="650" src="images/project_nine.png">
-                <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-              </div>
-            <div class="card-content">
-                <p>A website for Coimbatore based construction firm. This website is built using HTML, CSS, JavaScript, JQuery and Bootstrap.</p>
-                <center><a class="waves-effect waves-light btn" href="http://thiruvalluvarbuildingsystems.com/" style="margin-top: 15px;">Visit Site</a></center>
+            <div class="social-icons">
+                <a href="#">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
             </div>
-            </div>
-        </div>
+            <footer>&copy; Copyrights 2020</footer>
+        </section>
+    </main>
 
-        <div class="col s12 m6">
-          <div class="card">
-              <div class="card-image">
-                <img class="materialboxed" width="650" src="images/project_ten.png">
-                <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-              </div>
-            <div class="card-content">
-                <p>A website for California based physical fitness firm. I used HTML, CSS, SCCS, JavaScript, PHP and Bootstrap for this website.</p>
-                <center><a class="waves-effect waves-light btn" href="https://techcitycrossfit.com/" style="margin-top: 15px;">Visit Site</a></center>
-            </div>
-            </div>
-        </div>
-        
-      </div>
-
-		<div id="contact">
-		  	<h3 class="headings">Contact</h3>
-		</div>
-
-
-		<div class="row #f5f5f5 grey lighten-4">
-		    <div class="col s12 m4"> <img src="images/qr_code.png" class="image-alignment-main" id="shadow-effects"> </div>
-		    <div class="col s12 m8"> 
-		    	<h3> < Scan the QR Code </h3> 
-		    	<h5> If you are lazy to scan. Here you go : +91 801 569 1638</h5> <br>
-		    	<a href="Resume_New.pdf" download target="_blank" class="waves-effect waves-light btn-large blue">View Resume</a>
-		    	<h3> > Mail Me </h3> 
-		    	<a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ashwinprasad698@gmail.com" target="_blank"><i class="medium material-icons">mail</i></a>
-		    	<h5> Follow Me Here :</h5> 
-		    	<h6>
-		    		<a href="https://www.facebook.com/ashwinprasad007" target="_blank"><i class="fa fa-facebook" style="font-size:24px"></i></a> &nbsp; &nbsp; 
-		    		<a href="https://www.linkedin.com/in/ashwin-prasad/" target="_blank"><i class="fa fa-linkedin" style="font-size:24px"></i></a> &nbsp; &nbsp; 
-		    		<a href="https://github.com/ashwindz11" target="_blank"><i class="fa fa-github" style="font-size:24px"></i></a> &nbsp; &nbsp; 
-		    	</h6>
-
-		    </div>
-		</div>
-    		
-      	
-      <!-- JQuery -->
-      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-      <!-- Compiled and minified JavaScript -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-      <script>
-        $(document).ready(function(){
-          $('.sidenav').sidenav();
-        })
-
-          // Carousel
-		  $('.carousel.carousel-slider').carousel({
-		    fullWidth: true,
-		    indicators: true
-		  });
-
-
-		  $('.carousel').carousel();
-  			setInterval(function() {
-    		$('.carousel').carousel('next');
-  		  }, 3000); // every 3 seconds
-
-
-		jQuery(document).ready(function(){
-		jQuery('.skillbar').each(function(){
-			jQuery(this).find('.skillbar-bar').animate({
-				width:jQuery(this).attr('data-percent')
-			},3000);
-		});
-		});
-
-		document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.materialboxed');
-    var instances = M.Materialbox.init(elems, options);
-  });
-
-  // Or with jQuery
-
-  $(document).ready(function(){
-    $('.materialboxed').materialbox();
-  });
-        
-
-      </script>
-    </body>
-  </html>
-
-
-
-
-    
+    <script src="https://kit.fontawesome.com/680d85f391.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
