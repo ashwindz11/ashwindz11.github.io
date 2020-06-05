@@ -212,6 +212,26 @@
   transform: rotate(90deg) translate(-3rem, -5rem);
 }
 
+.btn {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.btn__resume, .btn__portfolio {
+  height: 30px;
+  width: auto;
+  padding: 5px;
+  border: none;
+  background-color: #DC143C;
+  color: white;
+  cursor: pointer;
+}
+
+.btn__resume:hover, .btn__portfolio:hover {
+  background: white;
+  color: #272727;
+}
+
 .projects {
   padding-bottom: 2rem;
 }
@@ -279,7 +299,6 @@
   width: 100%;
   z-index: 1;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   text-align: center;
 }
