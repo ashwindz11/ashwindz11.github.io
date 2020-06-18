@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Sliding Patio Door</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+function addRemoveClass() {
+    var delay = 1000; // milliseconds
+    setTimeout(function() {
+        $('.post').toggleClass('display');
+        addRemoveClass();
+    }, delay);
+};
 
+addRemoveClass();
+</script>
 <style type="text/css">
-.down_arrow {   
+.post {   
 	margin-top: 150px; left: 165px; z-index:1;
     position:relative;
     transition-property: left;
   	transition-duration: 1s;
   	transition-delay: 0.5s;
 }
-.down_arrow:hover {
+.display {
     left: 120px;
 }
 .SP-two-pane-frame {background:url('img/sliding/slidingframes.png') no-repeat;}
@@ -22,11 +32,11 @@
 
 <div id="SP-doorcontainer">
 	<div class="SP-two-pane-frame" style="margin:150px auto 0 100px; height:120px; width:117px;">
-	<img style="z-index: 3; top: 155px; left: 111px;" src="sliding/sliding.png"><img src="sliding/slidingR.png" class="down_arrow" />
+	<img style="z-index: 3; top: 155px; left: 111px;" src="sliding/sliding.png"><img src="sliding/slidingR.png" class="post" />
 	</div>
 </div>
 
-<h3>Please hover over right pane</h3>
+<h4 style="margin-left: 95px;">Automatic Sliding</h4>
 
 </body>
 </html>
