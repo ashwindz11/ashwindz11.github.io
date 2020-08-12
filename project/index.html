@@ -1,42 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-function addRemoveClass() {
-    var delay = 1000; // milliseconds
-    setTimeout(function() {
-        $('.post').toggleClass('display');
-        addRemoveClass();
-    }, delay);
-};
-
-addRemoveClass();
-</script>
-<style type="text/css">
-.post {   
-	margin-top: 150px; left: 165px; z-index:1;
-    position:relative;
-    transition-property: left;
-  	transition-duration: 1s;
-  	transition-delay: 0.5s;
+	<title>Sliding Door</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+function playsider() {
+	$(".img_2").delay(1000).animate({"left": "15px"});
+    $(".img_3").delay(1000).animate({"left": "316px"});
+    $(".img_2").delay(1500).animate({"left": "110px"},);
+    $(".img_3").delay(1500).animate({"left": "220px"},);
 }
-.display {
-    left: 120px;
-}
-.SP-two-pane-frame {background:url('img/sliding/slidingframes.png') no-repeat;}
-#SP-doorcontainer img {position:absolute; top:5px; width:57px; height:110px;}
-</style>
+setInterval(function(){ playsider();}, 2000);
+});
+</script> 
 </head>
 <body>
-
-<div id="SP-doorcontainer">
-	<div class="SP-two-pane-frame" style="margin:150px auto 0 100px; height:120px; width:117px;">
-	<img style="z-index: 3; top: 155px; left: 111px;" src="sliding/sliding.png"><img src="sliding/slidingR.png" class="post" />
-	</div>
-</div>
-
-<h4 style="margin-left: 95px;">Automatic Sliding</h4>
-
+	<div id="main">
+		<div class="img_1"></div>
+		<div class="img_2"></div>
+		<div class="img_3"></div>
+		<div class="img_4"></div>
+	<div>
 </body>
 </html>
+
+
+
+	
+	
+	
+	
+	
+	
+  	
+	
