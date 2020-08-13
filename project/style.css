@@ -6,31 +6,56 @@
 
 .img_2 {
 	z-index: -1;
-	top: -212px;
+	top: -208px;
 	width: 112px;
 	left: 110px;
 	position: relative;
-	background: url(sliding.png) no-repeat; height:212px;
+	background: url(sliding.png) no-repeat; 
+	height:204px;
 	background-position: -109px;
 }
 
 .img_3 {
 	z-index: -1;
-	top: -424px;
+	top: -411px;
 	width: 112px;
 	left: 220px;
 	position: relative;
-	background: url(sliding.png) no-repeat; height:212px;
+	background: url(sliding.png) no-repeat; 
+	height:202px;
 	background-position: -221px;
 }
 
 .img_4 {
-	top: -636px;
+	top: -618px;
 	left: 325px;
 	position: relative;
 	background: url(sliding.png) no-repeat; height:212px;
 	background-position: -325px;
 }
+
+.img_frame1 {
+	z-index: -1;
+	top: -624px;
+	left: 105px;
+	width: 220px;
+	position: relative;
+	background: url(sliding.png) no-repeat; 
+	height:212px;
+	background-position: 0px -206px;
+}
+
+.img_frame2 {
+	z-index: -1;
+	top: -1249px;
+	left: 105px;
+	width: 220px;
+	position: relative;
+	background: url(sliding.png) no-repeat; 
+	height:212px;
+	background-position: 0px 207px;
+}
+
 
 @media only screen and (max-width: 1930px) {
   #main {
