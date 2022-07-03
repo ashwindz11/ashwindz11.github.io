@@ -6,9 +6,26 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="scss/main.css">
   <title>Ashwin Prasad Projects</title>
+  <style>
+    .jobs {
+    width: 60vw;
+    margin: 2rem auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    }
+  .jobsub {
+      background: #414141;
+      padding: 0.5rem;
+      border-bottom: 5px solid #DC143C;
+
+  }
+  .jobsub h6 {
+          margin: 0.3rem 0;
+  }
+  </style>
 </head>
 <body>
-  
   <header>
     <div class="menu-btn">
       <span class="menu-btn__burger"></span>
@@ -130,14 +147,14 @@
       <h2 class="text-secondary" style="text-align: center; padding-top: 15px; font-size: 30px">Data Projects</h2>
       
       <div class="jobs">
-      <div class="jobs__job">
+      <div class="jobsub">
         <h3><b>Nashville Housing Project</b></h3>
         <p style="padding-top: 5px;">Used SQL to populate the tables, cleanup, remove duplicate and unwanted data</p>
         <p style="padding-top: 5px;">View file before : <a href="before.xlsx" download style="color: #DC143C;"> Click to Download </a></p> 
         <p style="padding-top: 5px;">View file after : <a href="after.xlsx" download style="color: #DC143C;"> Click to Download </a></p>
       </div>
 
-      <div class="jobs__job">
+      <div class="jobsub">
         <h3><b>Competitor price analysis</b></h3>
         <p style="padding-top: 5px;">Used excel charts to analyse competitor price increase and decrease throught the year.</p>
         <p style="padding-top: 5px;">View file : <a href="chart.xlsx" download style="color: #DC143C;"> Click to Download </a></p>
